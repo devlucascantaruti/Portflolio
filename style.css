@@ -1,0 +1,327 @@
+/* Estilos para a lista de navegação */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Define a altura da página como 100% da altura da viewport */
+}
+
+
+p{
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-about-me{
+    color: white;
+    padding-top: 100px;
+}
+
+.text-about-me{
+    flex: 1;
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.title-projects{
+    color: black;
+    padding-top: 250px;
+}
+
+.text-projects{
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.title-skills{
+    color: white;
+    padding-top: 250px;
+}
+
+.text-skills{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.title-contact{
+    color: white;
+    padding-top: 250px;
+}
+
+.text-contact{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1, h2, p {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+}
+
+section{
+    height: 100vh; /* Altura da tela */
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.about-me, .projects, .skills, .contact {
+    margin: 0; /* Garante que não haja margem entre seções */
+    padding: 0; /* Garante que não haja padding */
+}
+
+.section-visible {
+    opacity: 1; /* Classe para mostrar a seção */
+}
+
+.fade-in {
+    opacity: 1; /* Final */
+    transform: translateY(0);
+}
+
+h1 {
+    position: relative; /* Fixa a posição do h1 */
+    top: 250px; /* Ajuste conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro */
+    font-size: 70px;
+    color: #000;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    overflow: hidden;
+    animation: mark 0.5s step-end infinite, typing 4.6s steps(14, end) infinite;
+}
+
+@keyframes typing {
+        
+        0% { 
+            width: 0;
+        }
+    
+        20% { 
+            width: 12ch;
+        }
+
+        70% { 
+            width: 12ch;
+        }
+
+        85% { 
+            width: 0;
+        }
+
+        100% { 
+            width: 0;
+        }
+    }
+
+@keyframes mark {
+            50% { border-color: transparent; }
+        }
+
+.first{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 290px;
+    font-weight: 600;
+}
+
+.second{
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.third{
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+/* botões das redes sociais */
+
+.redes-sociais{
+    display: inline-block;
+    justify-content: center;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 900px;
+}
+
+#github{
+    margin-left: 720px;
+    background-color: #333;
+    border-radius: 5px;
+    border-width: 0.5px;
+    padding: 5px;
+}
+
+ion-icon{
+    font-size: 23px;
+    color: black;
+}
+
+#linkedin{
+    margin-left: 80px;
+    background-color: #0077b5;
+    border-radius: 5px;
+    border-width: 0.5px;
+    padding: 5px;
+}
+
+#download-cv{
+    margin-left: 80px;
+    background-color: purple;
+    border-radius: 5px;
+    border-width: 0.5px;
+    padding: 5px;
+}
+
+.redes-sociais {
+    display: relative;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    color: black; /* Define a cor padrão */
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: inherit; /* Faz o link herdar a cor do pai */
+}
+
+.redes-sociais:hover {
+    color: white; /* Muda a cor do texto e do ícone ao passar o mouse */
+}
+
+.redes-sociais:hover ion-icon {
+    color: white; /* Muda a cor do ícone ao passar o mouse */
+}
+
+.about-me{
+    background-color: #333;
+}
+
+.projects{
+    background-color: beige;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s;
+    border: 1px solid #eaeaea;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: black;
+}
+
+.project-description {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.skills{
+    background-color: black;
+}
+
+.contact{
+    background-color: #333;
+}
+
+.img-about-me{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: 30px;
+}
+
+.content-about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+}
