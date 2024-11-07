@@ -39,7 +39,7 @@
     <section class="projects">
     <h2 class="title-projects">Meus Projetos</h2>
     <div class="content-projects">
-    <p class="text-projects">Aqui você encontra projetos e exercícios práticos que desenvolvi ao longo dos meus estudos. </p>
+    <p class="text-projects">Aqui você encontra projetos e exercícios práticos que desenvolvi ao longo dos meus estudos.✍🏻</p>
     <div class="projects-container">
 
         <div class="swiffy-slider slider-item-show3 slider-nav-arrow slider-nav-dark slider-nav-sm slider-indicators-square slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-indicators-sm">
@@ -63,7 +63,7 @@
         <li>
             <div class="project-card" id="slide2">
             <img src="img/FireShot Capture 002 - Spotify - my-spotify-wine.vercel.app.png" alt="Spotify Clone" class="project-image">
-            <h3 class="project-title">Spotify Clone</h3>
+            <h3 class="project-title">Spotify</h3>
             <p class="project-description">
                 Projeto desenvolvido com:
                 <ion-icon name="logo-html5"></ion-icon>
@@ -86,9 +86,39 @@
             </div>
         </li>
 
-        <li class="slide-visible"><div id="slide4"></div></li>
-        <li class="slide-visible"><div id="slide5"></div></li>
-        <li><div id="slide6"></div></li>
+        <li class="slide-visible">
+            <div class="project-card" id="slide4">
+                <img src="img/FireShot Capture 009 - Imobiliária Summit - 127.0.0.1.png" alt="Imobiliária Summit" class="project-image">
+                <h3 class="project-title">Imobiliária Summit</h3>
+                <p class="project-description">
+                    Projeto desenvolvido com:
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+            </div>
+        </li>
+        <li class="slide-visible">
+            <div class="project-card" id="slide5">
+            <img src="img/FireShot Capture 007 - Qual comprar - site-de-noticias-black.vercel.app.png" alt="Tech Tudo" class="project-image">
+            <h3 class="project-title">Tech Tudo</h3>
+            <p class="project-description">
+                Projeto desenvolvido com:
+                <ion-icon name="logo-html5"></ion-icon>
+                <ion-icon name="logo-javascript"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
+            </div>
+        </li>
+        <li>
+            <div class="project-card" id="slide6">
+                <img src="img/FireShot Capture 010 - Jogo da Velha - jogo-da-velha-o8r1.vercel.app.png" alt="Jogo da Velha" class="project-image">
+                <h3 class="project-title">Jogo da Velha</h3>
+                <p class="project-description">
+                    Projeto desenvolvido com:
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+            </div>
+        </li>
     </ul>
 
     <!-- Navegação do carrossel -->
@@ -124,9 +154,17 @@
 
     <section class="contact">
     <h2 class="title-contact">Contato</h2>
-    <div class="content-contact">
-    <p class="text-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse debitis dolorum corrupti.</p>
-    </div>
+    <h3 class="text-contact"></h3>
+        <div class="contact-form-container">
+        <form action="send-email.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="submit-button" type="submit">Enviar</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
