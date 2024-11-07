@@ -207,6 +207,7 @@ h1 {
     background-color: #333;
     border-radius: 5px;
     border-width: 0.5px;
+    border-color: #333;
     padding: 5px;
 }
 
@@ -220,6 +221,7 @@ ion-icon{
     background-color: #0077b5;
     border-radius: 5px;
     border-width: 0.5px;
+    border-color: #0077b5;
     padding: 5px;
 }
 
@@ -228,6 +230,7 @@ ion-icon{
     background-color: purple;
     border-radius: 5px;
     border-width: 0.5px;
+    border-color: purple;
     padding: 5px;
 }
 
@@ -304,6 +307,10 @@ ion-icon{
     text-decoration: none;
 }
 
+.welcome{
+    background-color: rgb(104, 223, 253);
+}
+
 .skills{
     background-color: black;
 }
@@ -324,4 +331,10 @@ ion-icon{
     justify-content: space-between;
     align-items: center;
     max-width: 1000px;
+}
+
+.swiffy-slider {
+    max-width: 1000px; /* Ajuste para a largura desejada */
+    height: 100%; /* Ajuste para a altura desejada */
+    margin: 0 auto; /* Centraliza o carrossel */
 }

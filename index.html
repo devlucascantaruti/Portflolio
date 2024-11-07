@@ -10,6 +10,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css">
 </head>
 
     <body>
@@ -40,19 +41,75 @@
     <div class="content-projects">
     <p class="text-projects">Aqui você encontra projetos e exercícios práticos que desenvolvi ao longo dos meus estudos. </p>
     <div class="projects-container">
-        <!-- Card 1 -->
-        <div class="project-card">
-            <img src="img/pinguin-records-vercel-app-1024x768desktop-44bf64.jpg" alt="Pinguin Records" class="project-image">
-            <h3 class="project-title">Pinguin Records</h3>
+
+        <div class="swiffy-slider slider-item-show3 slider-nav-arrow slider-nav-dark slider-nav-sm slider-indicators-square slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-indicators-sm">
+        <ul class="slider-container">
+        <!-- Card personalizado para o slide 1 -->
+        <li>
+            <div class="project-card" id="slide1">
+                <img src="img/FireShot Capture 006 - Penguin Records - pinguin-records.vercel.app.png" alt="Pinguin Records" class="project-image">
+                <h3 class="project-title">Pinguin Records</h3>
+                <p class="project-description">
+                    Projeto desenvolvido com:
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <ion-icon name="logo-react"></ion-icon>
+                </p>
+            </div>
+        </li>
+        
+        <!-- Outros slides vazios ou prontos para adição -->
+        <li>
+            <div class="project-card" id="slide2">
+            <img src="img/FireShot Capture 002 - Spotify - my-spotify-wine.vercel.app.png" alt="Spotify Clone" class="project-image">
+            <h3 class="project-title">Spotify Clone</h3>
             <p class="project-description">
-            Projeto desenvolvido desenvolvido
-            Tecnologias utilizadas:
-            <ion-icon name="logo-html5"></ion-icon>
-            <ion-icon name="logo-javascript"></ion-icon>
-            <ion-icon name="logo-css3"></ion-icon>
-            <ion-icon name="logo-react"></ion-icon>
-            </p>
-        </div>
+                Projeto desenvolvido com:
+                <ion-icon name="logo-html5"></ion-icon>
+                <ion-icon name="logo-javascript"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
+                <ion-icon name="logo-react"></ion-icon>
+            </div>
+        </li>
+
+        <li>
+            <div class="project-card" id="slide3">
+            <img src="img/FireShot Capture 003 - Pokedex - pokedex-psi-pied.vercel.app.png" alt="Pokedex" class="project-image">
+            <h3 class="project-title">Pokedex</h3>
+            <p class="project-description">
+                Projeto desenvolvido com:
+                <ion-icon name="logo-html5"></ion-icon>
+                <ion-icon name="logo-javascript"></ion-icon>
+                <ion-icon name="logo-css3"></ion-icon>
+                <ion-icon name="logo-react"></ion-icon>
+            </div>
+        </li>
+
+        <li class="slide-visible"><div id="slide4"></div></li>
+        <li class="slide-visible"><div id="slide5"></div></li>
+        <li><div id="slide6"></div></li>
+    </ul>
+
+    <!-- Navegação do carrossel -->
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <!-- Indicadores do carrossel -->
+    <ul class="slider-indicators">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </div>
+
+
     </div>
     </section>
 
@@ -73,7 +130,7 @@
     </section>
 
     <script src="script.js"></script>
-
+    <script src="https://unpkg.com/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
     </body>
 
 </html>
