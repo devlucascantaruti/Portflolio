@@ -55,7 +55,9 @@ h2{
 
 .title-projects{
     color: black;
-    padding-top: 250px;
+    padding-top: 130px;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
 }
 
 .text-projects{
@@ -63,38 +65,30 @@ h2{
     text-align: center;
     margin: 0 auto;
     max-width: 500px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.title-skills{
-    color: white;
-    padding-top: 250px;
-}
-
-.text-skills{
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 500px;
-    font-size: 15px;
-    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
 }
 
 .title-contact{
     color: black;
-    padding-top: 250px;
+    padding-top: 130px;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
 }
 
 .text-contact{
-    color: white;
-    text-align: center;
+    color: black;
+    text-align: left;
+    letter-spacing: 1.7px;
     margin: 0 auto;
-    max-width: 500px;
-    font-size: 15px;
-    line-height: 1.5;
+    max-width: 400px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 h1, h2, p {
@@ -108,11 +102,10 @@ section{
     align-items: center;
     justify-content: center;
     opacity: 0; /* Começa invisível */
-    transform: translateY(50px);
     transition: all 1s ease-out;
 }
 
-.about-me, .projects, .skills, .contact {
+.about-me, .projects, .contact {
     margin: 0; /* Garante que não haja margem entre seções */
     padding: 0; /* Garante que não haja padding */
 }
@@ -135,6 +128,7 @@ h1 {
     color: #000;
     white-space: nowrap;
     border-right: 4px solid;
+    font-family: "Anton", sans-serif;
     width: 12ch;
     overflow: hidden;
     animation: mark 0.5s step-end infinite, typing 4.6s steps(14, end) infinite;
@@ -173,6 +167,7 @@ h1 {
     text-align: center;
     margin-top: 290px;
     font-weight: 600;
+    font-family: "Anton", sans-serif;
 }
 
 .second{
@@ -182,14 +177,16 @@ h1 {
     font-weight: 500;
     padding-top: 10px;
     font-style: italic;
+    font-family: "Roboto", sans-serif;
 }
 
 .third{
     font-size: 15px;
     color: #000;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* botões das redes sociais */
@@ -200,6 +197,7 @@ h1 {
     width: 100px;
     margin-top: 50px;
     margin-left: 900px;
+    font-family: "Roboto", sans-serif;
 }
 
 #github{
@@ -270,14 +268,16 @@ ion-icon{
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: whitesmoke;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    height: 480px;
     text-align: left;
     padding: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
     border: 1px solid #eaeaea;
+    margin-bottom: 10px;
 }
 
 .project-card:hover {
@@ -292,15 +292,88 @@ ion-icon{
 }
 
 .project-title {
-    font-size: 1.5em;
+    font-size: 25px;
     margin: 15px 0;
     color: black;
+    font-family: "Anton", sans-serif;
 }
 
 .project-description {
-    font-size: 1em;
     color: black;
     margin-bottom: 15px;
+    font-size: 12px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
+
+.repositorios{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.skills-used{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.icons-skill{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.logo-html5{
+    color: #e34f26;
+}
+
+.logo-javascript{
+    color: #f7df1e;
+}
+
+.logo-css3{
+    color: #1572b6;
+}
+
+.logo-nodejs{
+    color: #68a063;
+}
+
+.logo-electron{
+    color: #47848f;
+}
+
+.mongodb-icon{
+    color: #4db33d;
+}
+
+.logo-github{
+    color: #333;
+}
+
+.logo-vercel{
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.youtube-link{
+    font-size: 12px;
+    color: rgb(104, 223, 253);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.youtube-link:hover{
+    color: rgb(61, 212, 250)
 }
 
 .project-link {
@@ -357,6 +430,11 @@ form {
     flex-direction: column;
 }
 
+form label{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
 label {
     margin: 10px 0 5px;
     color: #555;
@@ -367,7 +445,17 @@ input, textarea {
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+input:hover{
+    border: 1px solid #333;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #333;
+    outline: none;
 }
 
 textarea {
@@ -381,13 +469,109 @@ textarea {
 
 #submit-button {
     padding: 10px;
-    background-color: #00af35;
+    background-color: rgb(104, 223, 253);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
 #submit-button:hover {
-    background-color: #45a049;
+    background-color: palegreen;
+}
+
+.footer {
+    background-color: papayawhip;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+.footer-text{
+    color: #2e2e2e;
+}
+
+.footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font Roboto */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

@@ -11,6 +11,9 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
     <body>
@@ -42,20 +45,40 @@
     <p class="text-projects">Aqui você encontra projetos e exercícios práticos que desenvolvi ao longo dos meus estudos.✍🏻</p>
     <div class="projects-container">
 
-        <div class="swiffy-slider slider-item-show3 slider-nav-arrow slider-nav-dark slider-nav-sm slider-indicators-square slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-indicators-sm">
+        <div class="swiffy-slider slider-item-show3 slider-nav-arrow slider-nav-dark slider-nav-sm slider-nav-outside slider-indicators-square slider-indicators-dark slider-indicators-outside slider-indicators-highlight slider-indicators-sm">
         <ul class="slider-container">
-        <!-- Card personalizado para o slide 1 -->
         <li>
             <div class="project-card" id="slide1">
                 <img src="img/FireShot Capture 006 - Penguin Records - pinguin-records.vercel.app.png" alt="Pinguin Records" class="project-image">
                 <h3 class="project-title">Pinguin Records</h3>
                 <p class="project-description">
-                    Projeto desenvolvido com:
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    <ion-icon name="logo-css3"></ion-icon>
-                    <ion-icon name="logo-react"></ion-icon>
+                    Projeto pessoal no qual estou desenvolvendo um site para uma loja de discos, utilizando tanto front-end quanto back-end. Integrei a plataforma com uma API do YouTube para exibir vídeos dos artistas e implementei um banco de dados para armazenar e autenticar cadastros de usuários.
                 </p>
+                <p class="skills-used">Linguagens:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript" class="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    <ion-icon name="logo-nodejs" class="logo-nodejs"></ion-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22px" height="22px" class="mongodb-icon">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor">
+                    <path d="M2528 5063 c-7 -77 -35 -122 -127 -208 -150 -140 -270 -264 -345 -358 -373 -467 -582 -1017 -637 -1672 -59 -704 197 -1380 730 -1927 74 -77 176 -173 227 -214 72 -59 93 -82 98 -107 5 -29 46 -369 61 -514 l7 -63 49 0 c31 0 51 5 53 12 2 7 13 84 25 170 11 86 35 228 52 315 l31 158 56 40 c75 54 282 261 365 365 354 445 537 972 537 1545 0 309 -55 597 -175 928 -150 416 -341 727 -646 1055 -183 196 -203 224 -280 377 -39 77 -72 141 -74 143 -1 1 -4 -19 -7 -45z m81 -2114 c13 -142 35 -627 51 -1064 17 -505 30 -916 30 -994 l0 -74 -24 22 c-32 30 -72 130 -103 261 -24 97 -26 127 -30 395 -8 493 19 1460 43 1579 11 51 22 8 33 -125z"/>
+                    </g>
+                    </svg>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
             </div>
         </li>
         
@@ -65,12 +88,30 @@
             <img src="img/FireShot Capture 002 - Spotify - my-spotify-wine.vercel.app.png" alt="Spotify Clone" class="project-image">
             <h3 class="project-title">Spotify</h3>
             <p class="project-description">
-                Projeto desenvolvido com:
-                <ion-icon name="logo-html5"></ion-icon>
-                <ion-icon name="logo-javascript"></ion-icon>
-                <ion-icon name="logo-css3"></ion-icon>
-                <ion-icon name="logo-react"></ion-icon>
-            </div>
+                Projeto pessoal que desenvolvi com meus conhecimentos em HTML, CSS e JS um clone da interface estática similar ao Spotify. Usei o Node.js com Electron para transformar o projeto em um app de desktop, fazendo com que o layout e as funcionalidades rodassem direto no sistema, sem precisar de um servidor back-end.
+            </p>
+                <p class="skills-used">Skills:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript" class="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    <ion-icon name="logo-nodejs" class="logo-nodejs"></ion-icon>
+                    <ion-icon name="logo-electron" class="logo-electron"></ion-icon>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </div>
         </li>
 
         <li>
@@ -78,11 +119,27 @@
             <img src="img/FireShot Capture 003 - Pokedex - pokedex-psi-pied.vercel.app.png" alt="Pokedex" class="project-image">
             <h3 class="project-title">Pokedex</h3>
             <p class="project-description">
-                Projeto desenvolvido com:
-                <ion-icon name="logo-html5"></ion-icon>
-                <ion-icon name="logo-javascript"></ion-icon>
-                <ion-icon name="logo-css3"></ion-icon>
-                <ion-icon name="logo-react"></ion-icon>
+                Projeto desenvolvido durante bootcamp na Dio, foi importante para aprimorar meu HTML, CSS e JS e também para aprender a consumir uma API.
+                </p>
+                <p class="skills-used">Linguagens:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript" class="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
             </div>
         </li>
 
@@ -91,10 +148,27 @@
                 <img src="img/FireShot Capture 009 - Imobiliária Summit - 127.0.0.1.png" alt="Imobiliária Summit" class="project-image">
                 <h3 class="project-title">Imobiliária Summit</h3>
                 <p class="project-description">
-                    Projeto desenvolvido com:
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    <ion-icon name="logo-css3"></ion-icon>
+                    Projeto desenvolvido com meu grupo de Faculdade, onde criamos um site para uma imobiliária fictícia. Utilizamos HTML, CSS e JS para desenvolver o front-end e PHP para o back-end.
+                </p>
+                <p class="skills-used">Linguagens:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript" class="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
             </div>
         </li>
         <li class="slide-visible">
@@ -102,10 +176,26 @@
             <img src="img/FireShot Capture 007 - Qual comprar - site-de-noticias-black.vercel.app.png" alt="Tech Tudo" class="project-image">
             <h3 class="project-title">Tech Tudo</h3>
             <p class="project-description">
-                Projeto desenvolvido com:
-                <ion-icon name="logo-html5"></ion-icon>
-                <ion-icon name="logo-javascript"></ion-icon>
-                <ion-icon name="logo-css3"></ion-icon>
+                Primeiro exercício que fiz durante o curso online pela plataforma ProgBr, onde aprendi a estruturar um site de notícias com HTML e CSS.
+                </p>
+                <p class="skills-used">Linguagens:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
             </div>
         </li>
         <li>
@@ -113,10 +203,27 @@
                 <img src="img/FireShot Capture 010 - Jogo da Velha - jogo-da-velha-o8r1.vercel.app.png" alt="Jogo da Velha" class="project-image">
                 <h3 class="project-title">Jogo da Velha</h3>
                 <p class="project-description">
-                    Projeto desenvolvido com:
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    <ion-icon name="logo-css3"></ion-icon>
+                    Exercício que realizei assistindo o vídeo no canal do <a class="youtube-link" href="https://www.youtube.com/watch?v=0EiX9c4vzRs">Felipe Rocha</a>, acrescentei algumas funcionalidades e estilizei o layout.
+                </p>
+                <p class="skills-used">Linguagens:</p>
+                    <div class="icons-skill">
+                    <ion-icon name="logo-html5" class="logo-html5"></ion-icon>
+                    <ion-icon name="logo-javascript" class="logo-javascript"></ion-icon>
+                    <ion-icon name="logo-css3" class="logo-css3"></ion-icon>
+                    </div>
+                    <p class="repositorios">Repositórios:</p>
+                    <ion-icon name="logo-github" class="logo-github"></ion-icon>
+                    <svg data-testid="geist-icon" height="21" width="21" stroke-linejoin="round" viewBox="0 0 16 16" style="color: currentcolor;">
+                    <g clip-path="url(#clip0_872_3186)">
+                    <circle cx="8" cy="8" r="7.25" fill="#000000" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L11.5 10.625H4.5L8 4.5Z" fill="#ffffff"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_872_3186">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>
             </div>
         </li>
     </ul>
@@ -129,12 +236,7 @@
     <ul class="slider-indicators">
         <li></li>
         <li></li>
-        <li></li>
         <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
         <li></li>
     </ul>
     </div>
@@ -154,7 +256,11 @@
 
     <section class="contact">
     <h2 class="title-contact">Contato</h2>
-    <h3 class="text-contact"></h3>
+    <h3 class="text-contact">
+        Se você tem alguma dúvida ou gostaria de discutir um possível projeto, fique à vontade para me chamar!🤙
+        <br>
+        <br>
+        Estou ansioso para conectar e explorar novas oportunidades juntos.</h3>
         <div class="contact-form-container">
         <form action="https://formspree.io/f/mwpkowbr" method="POST">
             <label for="nome">Nome:</label>
@@ -166,6 +272,10 @@
             <button id="submit-button" type="submit">Enviar</button>
         </form>
     </section>
+
+    <footer class="footer">
+    <p class="footer-text">&copy; 2024 Lucas Cantaruti. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
