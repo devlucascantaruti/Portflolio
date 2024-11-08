@@ -326,6 +326,14 @@ ion-icon{
     font-family: "Roboto", sans-serif;
 }
 
+a svg {
+    border: none;    /* Remove qualquer borda do SVG */
+    outline: none;   /* Remove o contorno do SVG */
+    display: inline-block;  /* Garante que o ícone seja exibido como inline */
+    text-decoration: none;  /* Remove o sublinhado do link */
+    background: none;  /* Remove qualquer background no SVG */
+}
+
 .icons-skill{
     display: inline-flex;
     gap: 10px;
